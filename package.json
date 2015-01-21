@@ -1,7 +1,7 @@
 {
   "name": "nb-moment",
   "version": "0.0.1",
-  "description": "AngularJS wrapper for Modernizr",
+  "description": "AngularJS wrapper for Moment.js",
   "author": {
     "name": "Hein Bekker",
     "email": "hein@netbek.co.za",
