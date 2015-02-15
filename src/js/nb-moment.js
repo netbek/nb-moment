@@ -11,15 +11,7 @@
 
 	angular
 		.module('nb.moment', [])
-		.factory('Moment', ['$window', function Moment ($window) {
-				var Moment = $window.moment;
-				delete $window.moment;
-				return Moment;
-			}])
-		.run(runBlock);
-
-	// Invoke at runtime to allow factory to delete global reference.
-	runBlock.$inject = ['Moment'];
-	function runBlock (Moment) {
-	}
+		.factory('Moment', ['$window', function ($window) {
+				return $window.moment;
+			}]);
 })(window, window.angular);
