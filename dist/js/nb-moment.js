@@ -11,7 +11,7 @@
 
 	angular
 		.module('nb.moment', [])
-		.factory('Moment', ['$window', function ($window) {
+		.factory('moment', ['$window', function ($window) {
 				return $window.moment;
 			}]);
 })(window, window.angular);
